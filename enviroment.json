@@ -1,0 +1,34 @@
+{
+	"vars": [
+		{
+			"APP_PORT_LANISTER": "3001",
+			"APP_PORT_STARK": "3002",
+			"APP_PORT_TARGARYEN": "3003",
+			"DB_HOST": "localhost",
+			"DB_PORT": "27017",
+			"DB_GOT_NAME": "got",
+			"DB_HOTD": "hotd"
+		}
+	],
+	"app_any": {
+		"name": "app_any",
+		"path": "./example/app_any/.env.example",
+		"vars": ["APP_PORT_LANISTER", "DB_HOST", "DB_PORT", "DB_GOT_NAME"]
+	},
+	"app_book": {
+		"name": "app_book",
+		"path": "./example/app_book/.env.production",
+		"vars": ["APP_PORT_STARK", "DB_HOST", "DB_PORT", "DB_GOT_NAME"]
+	},
+	"app_movie": {
+		"name": "app_any",
+		"path": "./example/app_movie/.env",
+		"vars": [
+			"APP_PORT_TARGARYEN",
+			"APP_PORT_LANISTER",
+			"DB_HOST",
+			"DB_PORT",
+			"DB_GOT_NAME"
+		]
+	}
+}
